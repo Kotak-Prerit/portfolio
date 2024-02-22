@@ -37,7 +37,7 @@ gsap.from(".section-text-container", {
   ease: Power2,
   duration: 1,
 });
-Shery.textAnimate(".section__text__p1" , {
+Shery.textAnimate(".section__text__p1", {
   style: 1,
   y: 10,
   delay: 0.1,
@@ -45,7 +45,7 @@ Shery.textAnimate(".section__text__p1" , {
   ease: "cubic-bezier(0.23, 1, 0.320, 1)",
   multiplier: 0.1,
 });
-Shery.textAnimate(".title" , {
+Shery.textAnimate(".title", {
   style: 1,
   y: 10,
   delay: 0.1,
@@ -53,7 +53,7 @@ Shery.textAnimate(".title" , {
   ease: "cubic-bezier(0.23, 1, 0.320, 1)",
   multiplier: 0.1,
 });
-Shery.textAnimate(".section__text__p2" , {
+Shery.textAnimate(".section__text__p2", {
   style: 1,
   y: 10,
   delay: 0.1,
@@ -62,16 +62,16 @@ Shery.textAnimate(".section__text__p2" , {
   multiplier: 0.1,
 });
 
-VanillaTilt.init(document.querySelectorAll(".color-container"),{
-    max: 22,
-    speed: 150,
-    glare: true,
-    "max-glare": 0.5
-  });
-  
-VanillaTilt.init(document.querySelectorAll(".details-container"),{
-    max: 22,
-    speed: 150,
-    glare: true,
-    "max-glare": 2
-  });
+VanillaTilt.init(document.querySelectorAll(".color-container"), {
+  max: 22,
+  speed: 150,
+  glare: true,
+  "max-glare": 0.5,
+});
+
+VanillaTilt.init(document.querySelectorAll(".details-container"), {
+  max: 22,
+  speed: 150,
+  glare: true,
+  "max-glare": 2,
+});

@@ -14,8 +14,16 @@ body {
 html {
   scroll-behavior: smooth;
 }
+*::selection {
+  background: none;
+  color: #3d1979;
+}
+p:hover,
+h1:hover {
+  cursor: default;
+}
 ::-webkit-scrollbar {
-  width: 8px;
+  width: 5px;
 }
 ::-webkit-scrollbar-thumb {
   background: #5827a8;
@@ -372,7 +380,7 @@ section {
 
 .arrow {
   position: absolute;
-  right: 0;
+  right: 1vw;
   bottom: 2.5rem;
 }
 

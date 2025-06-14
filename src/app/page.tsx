@@ -188,7 +188,7 @@ export default function Page() {
                     className="contact-form"
                   >
                     <label className="email-label">
-                      Your email (*)
+                      Email
                       <input
                         type="email"
                         name="email"
@@ -198,7 +198,7 @@ export default function Page() {
                       />
                     </label>
                     <label className="contact-label">
-                      Your Social or Contact (*)
+                      Social or Contact
                       <input
                         type="text"
                         name="message"
@@ -208,7 +208,7 @@ export default function Page() {
                       ></input>
                     </label>
                     <label className="message-label">
-                      Your message (*)
+                      Any specific message me?
                       <textarea
                         required
                         name="message"

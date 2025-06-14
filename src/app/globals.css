@@ -166,6 +166,7 @@ code[data-line-numbers-max-digits="3"] > [data-line]::before {
   align-items: flex-start;
   color: hsl(var(--foreground));
   width: 90%;
+  font-weight: 600;
 }
 
 .contact-info-upper-container {
@@ -190,6 +191,7 @@ code[data-line-numbers-max-digits="3"] > [data-line]::before {
   width: 100%;
   font-size: 16px;
   resize: none;
+  font-weight: 400;
   background: transparent;
   color: hsl(var(--foreground));
   border-color: hsl(var(--border));

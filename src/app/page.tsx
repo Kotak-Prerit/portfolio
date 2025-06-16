@@ -203,7 +203,7 @@ export default function Page() {
                         type="text"
                         name="message"
                         className="message-input"
-                        placeholder="+91 9988776600 OR instagram : prerit.in"
+                        placeholder="+91 9988776600"
                         required
                       ></input>
                     </label>

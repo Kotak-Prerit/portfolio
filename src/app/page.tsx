@@ -3,6 +3,7 @@ import BlurFade from "@/components/magicui/blur-fade";
 import BlurFadeText from "@/components/magicui/blur-fade-text";
 import { ProjectCard } from "@/components/project-card";
 import { ResumeCard } from "@/components/resume-card";
+import { AchievementsCard } from "@/components/achievements-card";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
 import { DATA } from "@/data/resume";
@@ -104,8 +105,7 @@ export default function Page() {
                 </p>
               </div>
             </div>
-          </BlurFade>
-          <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 max-w-[800px] mx-auto">
+            <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 max-w-[800px] mx-auto mt-6">
             {DATA.projects.map((project, id) => (
               <BlurFade
                 key={project.title}
@@ -125,6 +125,29 @@ export default function Page() {
               </BlurFade>
             ))}
           </div>
+          </BlurFade>
+          {/* Achievements Section */}
+          <section id="achievements" className="w-full py-12">
+            <BlurFade delay={BLUR_FADE_DELAY * 12.5}>
+              <div className="flex flex-col items-center justify-center space-y-4 text-center">
+                <div className="space-y-2">
+                  <div className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm">
+                    Achievements
+                  </div>
+                  <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
+                    CSSBattle Profile
+                  </h2>
+                  <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+                    Here are my latest stats and achievements from CSSBattle.
+                  </p>
+                </div>
+                <div className="w-full flex justify-center">
+                  <AchievementsCard />
+                </div>
+              </div>
+            </BlurFade>
+          </section>
+          
         </div>
       </section>
       <section id="hackathons">
